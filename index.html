@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhushan Abhushan | Premium Jewellery</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <nav>
+        <div class="logo-container">
+            <a href="#home">
+                <img src="logo.png" alt="Bhushan Abhushan Logo" class="nav-logo">
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#catalog">Catalog</a></li>
+            <li><a href="#testimonials">Reviews</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#home"         onclick="closeMenu()">Home</a>
+        <a href="#catalog"      onclick="closeMenu()">Catalog</a>
+        <a href="#testimonials" onclick="closeMenu()">Reviews</a>
+        <a href="#contact"      onclick="closeMenu()">Contact</a>
+    </div>
+    
+    <div class="sale-banner">
+        <div class="sale-text">
+            ◆  LOWEST GOLD RATE IN TOWN  ◆  FLAT 30% OFF ON MAKING CHARGES!  ◆  HURRY, LIMITED TIME ONLY!  ◆
+        </div>
+    </div>
+
+    <header id="home">
+        <p class="intro-para reveal">A hallmarked jewellery store offering a wide variety of high-quality gold and silver jewellery, including classic and trendy designs, with a warm and elegant ambiance.</p>
+
+        <div class="carousel-card reveal">
+            <div class="carousel-container">
+                <div class="carousel-slide active" style="background-image: url('photos/necklace modern/no 4.png');"></div>
+                <div class="carousel-slide" style="background-image: url('photos/necklace modern/no 4.png');"></div>
+                <div class="carousel-slide" style="background-image: url('photos/necklace modern/no 4.png');"></div>
+                <div class="carousel-slide" style="background-image: url('photos/necklace modern/no 4.png');"></div>
+                <div class="carousel-overlay"></div>
+            </div>
+        </div>
+            <div class="carousel-controls">
+                <span class="dot active" onclick="currentSlide(0)"></span>
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+
+    </header>
+
+    <section id="catalog">
+        <h2 class="section-title reveal">Our Collections</h2>
+        <div class="material-filter reveal">
+            <button class="material-btn active" data-material="all">All</button>
+            <button class="material-btn" data-material="gold">Gold</button>
+            <button class="material-btn" data-material="silver">Silver</button>
+            <button class="material-btn" data-material="diamond">Diamond</button>
+        </div>
+        <div class="scroll-container reveal" id="categoryScroll"></div>
+
+        <div class="designs-wrapper" id="designsWrapper" style="display: none;">
+            <h3 class="designs-title" id="currentCategoryTitle">Designs</h3>
+            <div class="designs-scroll" id="designsScroll"></div>
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <h2 class="section-title reveal">Client Experiences</h2>
+        <div class="conveyor-container">
+            <div class="conveyor-track" id="testimonialTrack">
+                <div class="test-card">
+                    <i class="fas fa-quote-left test-icon"></i>
+                    <p class="test-text">"Honestly speaking, this is the best jewellery showroom that you can ever get in samastipur. The prices, The staff, The overall ambiance and plus the quality and the kind of varities that they provide are of top notch level."</p>
+                    <h4 class="test-name">- Affan Khan</h4>
+                </div>
+                <div class="test-card">
+                    <i class="fas fa-quote-left test-icon"></i>
+                    <p class="test-text">"I was new in samastipur and visited this shop for the first time and I was quite impressed by the behavior of owner. I am fully satisfied from my purchase.... It is the best jewellers shop in samastipur."</p>
+                    <h4 class="test-name">- Keshav</h4>
+                </div>
+                <div class="test-card">
+                    <i class="fas fa-quote-left test-icon"></i>
+                    <p class="test-text">"Best place in samastipur to purchase jewellery. They also offer you 100% exchange policy with minimal making charges, I am fully satisfied with my visit. Best jewellers in samastipur town !!!"</p>
+                    <h4 class="test-name">- Priyanshu Gupta</h4>
+                </div>
+                <div class="test-card">
+                    <i class="fas fa-quote-left test-icon"></i>
+                    <p class="test-text">"A fantastic jewelry store with a warm, elegant ambience. The staff is polite, helpful, and knowledgeable, making the shopping experience smooth and enjoyable. This shop jewelry is defining premium!"</p>
+                    <h4 class="test-name">- Sarthak Kumar</h4>
+                </div>
+                <div class="test-card">
+                    <i class="fas fa-quote-left test-icon"></i>
+                    <p class="test-text">"The main things that I like are they offer customized jewellery and they can prepare any design from internet in your budget with same design. I am so happy with my purchase."</p>
+                    <h4 class="test-name">- Pooja Kumari</h4>
+                </div>
+                <div class="test-card">
+                    <i class="fas fa-quote-left test-icon"></i>
+                    <p class="test-text">"Best jewellers with quality gold jewellery. Nice experience and ambience and welcoming environment. Will soon plan the next visit."</p>
+                    <h4 class="test-name">- Baaarud Swami</h4>
+                </div>
+                <div class="test-card">
+                    <i class="fas fa-quote-left test-icon"></i>
+                    <p class="test-text">"Found genuine hallmark gold jewellery here with good behaviour and nice ambience. Genuine hallmark gold jewellery store in samastipur"</p>
+                    <h4 class="test-name">- Muni devi Upendra sah</h4>
+                </div>
+                <!-- Duplicate set for seamless loop -->
+                <div class="test-card">
+                    <i class="fas fa-quote-left test-icon"></i>
+                    <p class="test-text">"Honestly speaking, this is the best jewellery showroom that you can ever get in samastipur. The prices, The staff, The overall ambiance and plus the quality and the kind of varities that they provide are of top notch level."</p>
+                    <h4 class="test-name">- Affan Khan</h4>
+                </div>
+                <div class="test-card">
+                    <i class="fas fa-quote-left test-icon"></i>
+                    <p class="test-text">"I was new in samastipur and visited this shop for the first time and I was quite impressed by the behavior of owner. I am fully satisfied from my purchase.... It is the best jewellers shop in samastipur."</p>
+                    <h4 class="test-name">- Keshav</h4>
+                </div>
+                <div class="test-card">
+                    <i class="fas fa-quote-left test-icon"></i>
+                    <p class="test-text">"Best place in samastipur to purchase jewellery. They also offer you 100% exchange policy with minimal making charges, I am fully satisfied with my visit. Best jewellers in samastipur town !!!"</p>
+                    <h4 class="test-name">- Priyanshu Gupta</h4>
+                </div>
+                <div class="test-card">
+                    <i class="fas fa-quote-left test-icon"></i>
+                    <p class="test-text">"A fantastic jewelry store with a warm, elegant ambience. The staff is polite, helpful, and knowledgeable, making the shopping experience smooth and enjoyable. This shop jewelry is defining premium!"</p>
+                    <h4 class="test-name">- Sarthak Kumar</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 class="section-title reveal">Visit & Connect</h2>
+        <div class="contact-grid reveal">
+
+            <div class="contact-details">
+                <h3>Store Location</h3>
+                <div class="info-row">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Kapoor Market, Gudri Bazar Rd,<br>Samastipur, Bihar 848101</span>
+                </div>
+
+                <h3>Store Timings</h3>
+                <table class="timings-table">
+                    <tr><td>Monday</td><td>10:00 AM – 8:30 PM</td></tr>
+                    <tr><td class="closed">Tuesday</td><td class="closed">Closed</td></tr>
+                    <tr><td>Wednesday</td><td>10:00 AM – 8:30 PM</td></tr>
+                    <tr><td>Thursday</td><td>10:00 AM – 8:30 PM</td></tr>
+                    <tr><td>Friday</td><td>10:00 AM – 8:30 PM</td></tr>
+                    <tr><td>Saturday</td><td>10:00 AM – 8:30 PM</td></tr>
+                    <tr><td>Sunday</td><td>10:00 AM – 8:30 PM</td></tr>
+                </table>
+
+                <h3>Reach Out</h3>
+                <div class="btn-group contact-actions">
+                    
+                    <div class="info-row phone-text">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>+91 94300 46709</span>
+                    </div>
+                    <a href="tel:09430046709" class="btn btn-call"><i class="fas fa-phone-alt"></i> Call Now</a>
+                    
+                    <a href="https://wa.me/919430046709" target="_blank" class="btn btn-wa"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                    <a href="mailto:bhushanabhushanspj@gmail.com" class="btn btn-mail"><i class="fas fa-envelope"></i> Email</a>
+                    
+                </div>
+            </div>
+
+            <div class="contact-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4338.167161097971!2d85.78504330000001!3d25.862653599999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed9186e71ea401%3A0xe58bb88d49d52d06!2sBhushan%20Abhushan%20(Hallmarked%20Jewellery%20Store)!5e1!3m2!1sen!2sin!4v1773770864301!5m2!1sen!2sin"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Bhushan Abhushan. All Rights Reserved. <br> <span>Hallmarked Gold, Silver & Diamond Jewellery.</span></p>
+        <p class="developer-credit">
+            Designed & Developed by <a href="create.shashank@gmail.com" class="dev-link">Shashank Shankar</a> 
+            <span class="open-to-work">Open for new freelance projects</span>
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
